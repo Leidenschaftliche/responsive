@@ -1,0 +1,59 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 100px
+}
+
+.col-grid{
+    flex: 15%;
+    max-width: 25%;
+    padding: 0px 5px;
+}
+
+.col-grid img{
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    cursor: pointer;
+}
+
+
+
+h1{
+    font-size: 60px;
+    color: brown;
+}
+
+
+
+
+
+@media screen and (max-width: 900px){
+
+    h1{
+        font-size: 40px;
+        color: red;
+    }
+    .container{
+        padding: 25px 100px;    
+    }
+   
+     .col-grid{
+        flex: 35%;
+        max-width: 45%;
+    }
+}
+
+@media all and (max-width: 600px ){
+    h1{
+        font-size: 20px;
+        color: blue;
+    }
+    .container{
+        padding: 30px 110px;
+    }
+     .col-grid{
+        flex: 100%;
+        max-width: 100%;
+    }
+}
